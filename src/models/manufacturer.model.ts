@@ -21,6 +21,10 @@ export class Manufacturer extends Entity {
   })
   age: number;
 
+  @property({
+    type: 'number',
+  })
+  order_id?: number;
 
   constructor(data?: Partial<Manufacturer>) {
     super(data);
