@@ -1,14 +1,14 @@
-import {Entity, model, property, belongsTo} from '@loopback/repository';
+import {belongsTo, Entity, model, property} from '@loopback/repository';
 import {Customer} from './customer.model';
 
 @model()
 export class Address extends Entity {
   @property({
-    type: 'string',
+    type: 'number',
     id: true,
     generated: true,
   })
-  address_id?: string;
+  address_id?: number;
 
   @property({
     type: 'string',
